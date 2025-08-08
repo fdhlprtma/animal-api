@@ -154,8 +154,8 @@
       }
       ```
 
-## 🙏 Terima Kasih
-   Terima kasih telah menggunakan Animal API!
+## Selamat Ngoding
+   Tengkyu cuy sudah menggunakan Animal API!
    Jika kamu menemukan bug, punya saran fitur, atau ingin berkontribusi, jangan ragu untuk membuka issue atau pull request di repository ini.
    
    Selamat mencoba dan semoga API ini membantu dalam pengelolaan data hewan kamu! 🦌🚀
