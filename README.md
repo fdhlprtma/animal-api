@@ -68,7 +68,7 @@ Sebelum menjalankan API, pastikan sudah menginstal:
   └── README.md
 ```
 ## Environment Variables (.env)
-  ```bash
+  ```graphql
   | Variabel     | Deskripsi               | Contoh     |
   | ------------ | ----------------------- | ---------- |
   | DB\_USER     | Username database MySQL | root       |
