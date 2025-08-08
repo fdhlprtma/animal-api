@@ -31,7 +31,7 @@ Sebelum menjalankan API, pastikan sudah menginstal:
 
 1. **Clone repositori**
    ```bash
-   git clone https://github.com/username/animal-api.git
+   git clone https://github.com/fdhlprtma/animal-api.git
    cd animal-api
 2. **Buat database & import schema**
    ```bash
