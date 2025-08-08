@@ -111,14 +111,27 @@ Sebelum menjalankan API, pastikan sudah menginstal:
    Authorization: Bearer <token>
    ```
    ***Field:***
-    - name (string)
-    - image (file)
-    - classification[kingdom] ... classification[species]
-    - characteristics (string)
-    - examples[] (array string)
-    - habitat (string)
-    - ecological_role (string)
-4. **Autentikasi (Login)**
+   ```graphsql
+   | Field                     | Tipe         | Contoh Value                                                    |
+   | ------------------------- | ------------ | --------------------------------------------------------------- |
+   | `name`                    | string       | `Rusa Merah`                                                    |
+   | `image`                   | file         | *(pilih file JPG/PNG)*                                          |
+   | `classification[kingdom]` | string       | `Animalia`                                                      |
+   | `classification[phylum]`  | string       | `Chordata`                                                      |
+   | `classification[class]`   | string       | `Mammalia`                                                      |
+   | `classification[order]`   | string       | `Artiodactyla`                                                  |
+   | `classification[family]`  | string       | `Cervidae`                                                      |
+   | `characteristics`         | string       | `Tanduk hanya pada jantan, perut empat ruang.`                  |
+   | `examples[]`              | string array | `Rusa Merah (Cervus elaphus)`, `Rusa Kutub (Rangifer tarandus)` |
+   | `habitat`                 | string       | `Hutan, padang rumput, tundra`                                  |
+   | `ecological_role`         | string       | `Mengendalikan vegetasi, mangsa predator`                       |
+   ```
+   ***Catatan :***
+   - Gunakan form-data jika ingin mengunggah file gambar (image).
+   - Gunakan raw JSON jika ingin menyertakan image_url langsung.
+   - Struktur field lainnya sama persis.
+
+5. **Autentikasi (Login)**
    ```bash
    POST /login
    Content-Type: application/json
