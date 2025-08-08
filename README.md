@@ -51,7 +51,8 @@ Sebelum menjalankan API, pastikan sudah menginstal:
   animal-api/
   │
   ├── cmd/
-  │   └── main.go          # Entry point aplikasi
+  │   └── server/
+  |       └── main.go          # Entry point aplikasi
   │
   ├── internal/
   │   ├── config/          # Konfigurasi database & env
@@ -59,8 +60,13 @@ Sebelum menjalankan API, pastikan sudah menginstal:
   │   ├── handler/         # Handler untuk endpoint API
   │   ├── model/           # Model data hewan
   │   ├── service/         # Logika bisnis
+  |   ├── repository/      # Akses ke database & query SQL
+  |   |   └── service/
   │   └── middleware/      # Middleware autentikasi JWT
   │
+  ├── pkg/
+  |   └── utils/
+  |
   ├── uploads/             # Folder penyimpanan gambar
   ├── go.mod
   ├── go.sum
