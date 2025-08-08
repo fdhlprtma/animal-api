@@ -37,7 +37,11 @@ Sebelum menjalankan API, pastikan sudah menginstal:
    ```bash
    mysql -u root -p -e "CREATE DATABASE animaldb;"
    mysql -u root -p animaldb < internal/config/schema.sql
-3. **Isi variabel environment di .env**
+3. **Salin file .env.example menjadi .env**
+   ```bash
+   cp .env.example .env
+   ```
+4. **Isi variabel environment di .env**
    ```bash
    DB_USER=root
    DB_PASSWORD=
